@@ -17,4 +17,4 @@
 
 ## API
 
-- `function bisect<T = unknown>(array: T[], target: T): number;` Searches through `array` with a recursive binary-search algorithm (better for sorted arrays). Returns the index of the first ocurrence of the element, or -1 if it's not present.
+- `function bisect<T = unknown>(array: T[], target: T): number;` Searches for `target` through `array` with a recursive binary-search algorithm (suited for sorted arrays). Returns the index of the first ocurrence of `target`, or -1 if it's not present.
