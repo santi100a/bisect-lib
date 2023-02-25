@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/santi100a/bisect-lib/actions/workflows/main.yml/badge.svg)](https://github.com/santi100a/bisect-lib/actions)
 [![GitHub stars](https://img.shields.io/github/stars/santi100a/bisect-lib.svg)](https://github.com/santi100a/bisect-lib)
 [![License](https://img.shields.io/github/license/santi100a/bisect-lib.svg)](https://github.com/santi100a/bisect-lib)
+[![Bundlephobia status](https://badgen.net/bundlephobia/@santi100%2fbisect-lib/latest)](https://bundlephobia.com/package/@santi100/bisect-lib@latest)
 
 - 🚀 Lightweight and fast[^](#disclaimers)
 - 👴 ES3-compliant[*](#disclaimers)
