@@ -23,7 +23,7 @@
 ```javascript
 bisectLib.bisect([5, 7, 3], 3) // Outputs -1 (not present)
 ```
-- `function bisect<T extends C, C = T>(array: T[], target: T, opts?: BisectOptions<C>): number;`: 
+- `function bisect<T extends C, C = T>(array: T[], target: T, opts?: BisectOptions<C>): number;`
 Searches for `target` through `array` with an iterative binary-search algorithm
 (designed for sorted arrays) and returns an array of indices. See `bisect` for details.
 
