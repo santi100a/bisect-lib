@@ -1,3 +1,5 @@
+import { deepEquality } from '@santi100/equal-lib/cjs';
+
 type Comparator<T = unknown> = (a: T, b: T) => number;
 
 /**
@@ -63,7 +65,7 @@ function bisect<T extends C, C = T>(
       typeof array[middle] === 'number' && 
       Math.abs(array[middle] as number - (target as number)) <= epsilon) {
       return middle;
-    } else if (array[middle] === target) {
+    } else if (deepEquality(array[middle], target)) {
       return middle;
     } else if (comparator) {
       const cmp = comparator(target, array[middle]);
@@ -98,7 +100,7 @@ function bisect<T extends C, C = T>(
   const firstIndex = bisect(array, target, opts);
   const indices: number[] = firstIndex === -1 ? [] : [firstIndex];
   let i = firstIndex + 1;
-  while (array[i] === target && i < array.length) {
+  while (deepEquality(array[i], target) && i < array.length) {
     indices.push(i);
     i++;
   }

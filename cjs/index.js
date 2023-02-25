@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 exports.bisectMultiple = exports.bisect = void 0;
+var cjs_1 = require("@santi100/equal-lib/cjs");
 /**
  * Searches for `target` through `array` with an iterative binary-search algorithm (designed for sorted arrays).
  * **Tests show it doesn't work correctly for unsorted arrays, so you shouldn't pass them to this function:
@@ -36,7 +37,7 @@ function bisect(array, target, opts) {
             Math.abs(array[middle] - target) <= epsilon) {
             return middle;
         }
-        else if (array[middle] === target) {
+        else if ((0, cjs_1.deepEquality)(array[middle], target)) {
             return middle;
         }
         else if (comparator) {
@@ -73,7 +74,7 @@ function bisectMultiple(array, target, opts) {
     var firstIndex = bisect(array, target, opts);
     var indices = firstIndex === -1 ? [] : [firstIndex];
     var i = firstIndex + 1;
-    while (array[i] === target && i < array.length) {
+    while ((0, cjs_1.deepEquality)(array[i], target) && i < array.length) {
         indices.push(i);
         i++;
     }

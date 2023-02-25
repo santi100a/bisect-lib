@@ -16,7 +16,7 @@
 - Via PNPM: `pnpm install @santi100/bisect-lib`
 
 ## API
-
+All functions support deep equality.
 - `function bisect<T = unknown>(array: T[], target: T): number;` Searches for `target` through `array` with a recursive binary-search algorithm (designed for sorted arrays). Returns the index of the first ocurrence of `target`, or -1 if it's not present.
 
 **Tests show it doesn't work correctly for unsorted arrays, so you shouldn't pass them to this function:**
@@ -25,6 +25,5 @@ bisectLib.bisect([5, 7, 3], 3) // Outputs -1 (not present)
 ```
 - `function bisectMultiple<T extends C, C = T>(array: T[], target: T, opts?: BisectOptions<C>): number;`
 Searches for `target` through `array` with an iterative binary-search algorithm
-(designed for sorted arrays) and returns an array of indices. See `bisect` for details.
+(designed for sorted arrays) and returns an array of indices. See `bisect` for details.}
 
-**Also, keep in mind this library doesn't do deep equality for now. You can file an issue if you want this feature.**

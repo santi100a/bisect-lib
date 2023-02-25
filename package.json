@@ -6,7 +6,7 @@
     "portable",
     "binary-search"
   ],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "author": "santi100a <santyrojasprieto9@gmail.com>",
   "license": "MIT",
@@ -22,5 +22,8 @@
     "dev": "tsc -w",
     "test:watch": "jest --watchAll --coverage"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@santi100/equal-lib": "^1.0.4"
+  }
 }
