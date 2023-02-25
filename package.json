@@ -6,7 +6,7 @@
     "portable",
     "binary-search"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "author": "santi100a <santyrojasprieto9@gmail.com>",
   "license": "MIT",
@@ -18,8 +18,9 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "dev": "tsc -w",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll --coverage"
   },
   "type": "module"
 }
