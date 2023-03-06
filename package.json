@@ -24,6 +24,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@santi100/equal-lib": "^1.0.4"
+    "@santi100/equal-lib": "^1.0.5"
   }
 }
