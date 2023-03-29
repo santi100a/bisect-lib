@@ -554,10 +554,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@santi100/equal-lib@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@santi100/equal-lib/-/equal-lib-1.0.4.tgz#1d679fa192c22001b2febda65bbaf409e8aaee15"
-  integrity sha512-Ydst8I0Wlv2am6F2Nr9HqJDfQeTZRViTb7yHZQzhBG+AL4B+/LrToNoxvHrPXXzaGhW7c4u3Gl7MVmEEfxZUOg==
+"@santi100/equal-lib@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@santi100/equal-lib/-/equal-lib-1.0.8.tgz#967f8ca71a6cfc02f416b110f8b697a1b6cfc6ea"
+  integrity sha512-8PKrb9Nrm/JTf6h7Att7dj7PzxxuDe3OJ6wIXq4PA0CWOXr91QFNB/VVvfmLKwjdN9pNgSyv2jKB7uXbk8HICg==
 
 "@sinclair/typebox@^0.25.16":
   version "0.25.23"
