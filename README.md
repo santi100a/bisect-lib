@@ -1,9 +1,10 @@
 # Santi's Bisect Library
 
 [![Build Status](https://github.com/santi100a/bisect-lib/actions/workflows/test.yml/badge.svg)](https://github.com/santi100a/bisect-lib/actions)
+[![npm homepage](https://img.shields.io/npm/v/@santi100/bisect-lib)](https://npmjs.org/package/@santi100/bisect-lib)
 [![GitHub stars](https://img.shields.io/github/stars/santi100a/bisect-lib.svg)](https://github.com/santi100a/bisect-lib)
 [![License](https://img.shields.io/github/license/santi100a/bisect-lib.svg)](https://github.com/santi100a/bisect-lib)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@santi100/bisect-lib)](https://bundlephobia.com/package/@santi100/bisect-lib@latest)
+[![Bundlephobia stats](https://img.shields.io/bundlephobia/min/@santi100/bisect-lib)](https://bundlephobia.com/package/@santi100/bisect-lib@latest)
 
 
 - 🚀 Lightweight and fast[^](#disclaimers)
