@@ -7,6 +7,8 @@ on:
 jobs:
   say-hi:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Say hi
         uses: jungwinter/comment@v1
