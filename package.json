@@ -6,7 +6,8 @@
     "portable",
     "binary-search"
   ],
-  "version": "0.0.4",
+  "description": "Santi's Bisect Library: Binary search in a lightweight package.",
+  "version": "0.0.5",
   "main": "index.js",
   "author": "santi100a <santyrojasprieto9@gmail.com>",
   "license": "MIT",

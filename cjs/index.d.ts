@@ -1,4 +1,5 @@
 type Comparator<T = unknown> = (a: T, b: T) => number;
+type Order = 'ascending' | 'descending';
 /**
  * @since 0.0.3
  */
@@ -8,8 +9,8 @@ interface BisectOptions<C = unknown> {
      */
     start?: number;
     /**
-   * Inclusive optional ending index. Defaults to the length of the array..
-   */
+     * Inclusive optional ending index. Defaults to the length of the array.
+     */
     end?: number;
     /**
      * Optional epsilon for floating-point comparisons. Defaults to `Number.EPSILON`.
@@ -18,7 +19,7 @@ interface BisectOptions<C = unknown> {
     /**
      * Optional order. Defaults to 'ascending'.
      */
-    order?: 'ascending' | 'descending';
+    order?: Order;
     /**
      * Optional custom comparator. Is compatible with {@link Array.prototype.sort}.
      */
