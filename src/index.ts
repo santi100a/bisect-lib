@@ -131,6 +131,7 @@ function bisectMultiple<T extends C, C = unknown>(
 		indices.push(i);
 		i++;
 	}
+	
 	return indices;
 }
 

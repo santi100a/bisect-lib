@@ -38,6 +38,10 @@
     "test:watch": "jest --watchAll",
     "check-links": "remark --frail ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santi100a/bisect-lib"
+  },
   "dependencies": {
     "@santi100/equal-lib": "^1.0.8"
   }
