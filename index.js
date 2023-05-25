@@ -1,1 +1,0 @@
-export { default, bisect } from './cjs/index.js';

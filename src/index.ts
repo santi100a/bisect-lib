@@ -29,11 +29,13 @@ interface BisectOptions<C = unknown> {
 	 */
 	comparator?: Comparator<C>;
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function DEFAULT_ASCENDING_COMPARATOR(a: any, b: any) {
 	if (a < b) return -1;
 	if (a > b) return 1;
 	return 0;
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function DEFAULT_DESCENDING_COMPARATOR(a: any, b: any) {
 	if (a < b) return 1;
 	if (a > b) return -1;
@@ -69,7 +71,7 @@ function bisect<T extends C, C = T>(
 			: DEFAULT_DESCENDING_COMPARATOR, // Satisfies idea #1, see `ideas.md`
 		epsilon = EPSILON, // Satisfies idea #5, see `ideas.md`
 		start = 0, // Satisfies idea #4, see `ideas.md`
-		end = array.length // Satisfies idea #4, see `ideas.md`
+		end = array.length, // Satisfies idea #4, see `ideas.md`
 	} = opts;
 	let left = start;
 	let right = end - 1;
